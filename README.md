@@ -1,70 +1,140 @@
-# Getting Started with Create React App
+# ⌨️ SamType — Typing Speed Test App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A clean, distraction-free typing speed test built with React.js
 
-## Available Scripts
+🔗 **Live Demo:** [samtype-app.vercel.app](https://samtype-app.vercel.app)  
+👨‍💻 **GitHub:** [github.com/samir416/samtype](https://github.com/samir416/samtype)
 
-In the project directory, you can run:
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Router](https://img.shields.io/badge/React_Router-v6-red?logo=reactrouter)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple?logo=bootstrap)
+![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?logo=vercel)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🎯 About The Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+SamType is a real-time typing speed test application where users can
+measure their **Words Per Minute (WPM)** and **Accuracy** in a 60-second
+test. Built as a React.js project focusing on component-based
+architecture, state management, and API integration.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Features
 
-### `npm run build`
+- ⏱️ **60-second typing test** with live countdown timer
+- 📊 **Real-time WPM & Accuracy** calculation
+- 🌙 **Dark / Light mode** with localStorage persistence
+- 📝 **Random paragraphs** fetched from DummyJSON API
+- ⏸️ **Pause & Resume** timer mid-test
+- 🧩 **15 Reusable Components** — clean architecture
+- ⚡ **Fast & minimal UI** — no distractions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Technology | Purpose |
+|------------|---------|
+| **React.js** | Frontend Framework |
+| **React Router DOM v6** | Multi-page Navigation |
+| **Bootstrap 5** | UI Components & Styling |
+| **DummyJSON API** | Random Paragraph Generation |
+| **localStorage** | Dark Mode Persistence |
+| **Vercel** | Deployment & Hosting |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📁 Project Structure
+```
+src/
+├── components/          # Reusable UI Components
+│   ├── Navbar.jsx       # Navigation bar
+│   ├── Logo.jsx         # Brand logo
+│   ├── DarkModeToggle.jsx  # Theme switcher
+│   ├── Footer.jsx       # Page footer
+│   ├── HeroBadge.jsx    # Home page badge
+│   ├── HeroHeading.jsx  # Home page heading
+│   └── HeroButtons.jsx  # Home page CTA buttons
+│
+└── project/             # Page Components
+    ├── Type.jsx          # Home page
+    ├── TypeMaster.jsx    # Typing test page
+    ├── Result.jsx        # Result page
+    ├── TimerDisplay.jsx  # Countdown timer
+    ├── ParagraphDisplay.jsx  # Text with color feedback
+    ├── TypingInput.jsx   # Typing textarea
+    ├── TypingControls.jsx   # Start/Back buttons
+    ├── ExitModal.jsx     # Pause modal
+    ├── ResultCard.jsx    # Result card wrapper
+    ├── StatsRow.jsx      # WPM/Accuracy/Time stats
+    └── ResultButtons.jsx # Result page buttons
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🧠 How It Works
+```
+1. User lands on Home page
+         ↓
+2. Clicks "Start Typing Practice"
+         ↓
+3. 60-second timer starts
+         ↓
+4. Random paragraph loads from API
+         ↓
+5. User types — Green = Correct / Red = Wrong
+         ↓
+6. Timer ends → WPM & Accuracy calculated
+         ↓
+7. Result page shows final score
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## ⚙️ Run Locally
+```bash
+# Clone the repository
+git clone https://github.com/samir416/samtype.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Go into the project folder
+cd samtype
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Install dependencies
+npm install
 
-### Code Splitting
+# Start development server
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📸 App Pages
 
-### Making a Progressive Web App
+| Page | Route | Description |
+|------|-------|-------------|
+| 🏠 Home | `/` | Landing page with hero section |
+| ⌨️ Practice | `/typemaster` | Live typing test |
+| 📊 Result | `/result` | WPM, Accuracy & Time |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 👨‍💻 Developer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Samir Prajapat** — Frontend Developer
 
-### Deployment
+> *"Built this project to strengthen React.js concepts including*
+> *component architecture, hooks, state management and API integration."*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[![GitHub](https://img.shields.io/badge/GitHub-samir416-black?logo=github&style=for-the-badge)](https://github.com/samir416)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-SamType-blue?logo=vercel&style=for-the-badge)](https://samtype-app.vercel.app)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📄 License
+
+This project is open source and available under the
+[MIT License](LICENSE).
