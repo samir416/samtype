@@ -1,0 +1,95 @@
+/* ===== GLOBAL RESPONSIVE ===== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== NAVBAR ===== */
+.navbar .container-fluid {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.navbar-nav {
+  flex-wrap: wrap;
+  gap: 8px !important;
+}
+
+/* ===== HOME PAGE ===== */
+.hero-title {
+  font-size: clamp(28px, 6vw, 56px) !important;
+}
+
+.hero-desc {
+  font-size: clamp(14px, 2.5vw, 18px) !important;
+  padding: 0 16px;
+}
+
+.hero-buttons {
+  flex-wrap: wrap !important;
+  padding: 0 16px;
+}
+
+.hero-buttons button {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* ===== TYPING PAGE ===== */
+.typing-box {
+  margin: 20px 16px !important;
+  padding: 16px !important;
+}
+
+.timer-display {
+  font-size: clamp(24px, 7vw, 36px) !important;
+  margin-top: 24px !important;
+}
+
+/* ===== RESULT PAGE ===== */
+.result-card {
+  width: 90% !important;
+  max-width: 420px !important;
+  margin: 0 16px;
+}
+
+/* ===== TABLET (max 768px) ===== */
+@media (max-width: 768px) {
+  .navbar-nav {
+    justify-content: center;
+  }
+
+  .hero-badge {
+    font-size: 13px !important;
+    letter-spacing: 1px !important;
+    padding: 5px 16px !important;
+  }
+
+  .typing-textarea {
+    font-size: 15px !important;
+    height: 100px !important;
+  }
+}
+
+/* ===== MOBILE (max 480px) ===== */
+@media (max-width: 480px) {
+  .navbar-brand span {
+    font-size: 16px !important;
+  }
+
+  .hero-buttons {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .stats-col h3 {
+    font-size: 22px !important;
+  }
+
+  .result-card {
+    padding: 20px 14px !important;
+  }
+
+  .typing-box {
+    padding: 12px !important;
+  }
+}
